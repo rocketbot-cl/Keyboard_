@@ -19,10 +19,19 @@ Para obtener la Opcion seleccionada:
 
 
 Para instalar librerias se debe ingresar por terminal a la carpeta "libs"
-    
+
     pip install <package> -t .
 
 """
+
+import os
+import sys
+
+base_path = tmp_global_obj["basepath"]
+cur_path = base_path + 'modules' + os.sep + 'Keyboard_' + os.sep + 'libs' + os.sep
+sys.path.append(cur_path)
+import keyboard
+import time
 
 from pywinauto.keyboard import send_keys
 
@@ -30,7 +39,6 @@ from pywinauto.keyboard import send_keys
     Obtengo el modulo que fue invocado
 """
 module = GetParams("module")
-
 
 if module == "sendKey":
     key_ = GetParams('key_')
@@ -65,9 +73,31 @@ if module == "sendKey":
             send_keys('^B')
 
     else:
-        raise Exception ('Debe seleccionar una opcion')
+        raise Exception('Debe seleccionar una opcion')
 
+if module == "get":
+    try:
+        timeout = GetParams('timeout')
+        result = GetParams("result")
+        keys = []
+        hot_key = None
+        while True:
+            key = keyboard.read_event()
 
+            if key.event_type == "down":
+                keys.insert(0, key.name)
+
+            if key.event_type == "up":
+                hot_key = keyboard.get_hotkey_name(keys)
+
+            if hot_key:
+                break
+
+        if result:
+            SetVar(result, hot_key)
+    except Exception as e:
+        PrintException()
+        raise e
 
 
 
