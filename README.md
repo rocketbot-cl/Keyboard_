@@ -1,5 +1,5 @@
 # Keyboard_
-Send predefined key combinations
+Send predefined key combinations, repeat keys and wait for key pressed by user and store it in a variable
 
 ![alt text](https://raw.githubusercontent.com/rocketbot-cl/Keyboard_/master/example/keyboard.png)
 <h2></h2>
