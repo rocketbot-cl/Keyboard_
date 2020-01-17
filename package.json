@@ -387,11 +387,11 @@
     {
       "en": {
         "title": "Get keys",
-        "description": "Get keys combination"
+        "description": "Wait until the user presses a key or combination and store it in a variable"
       },
       "es": {
         "title": "Obtener combinación de teclas",
-        "description": "Obtiene combinación de teclas"
+        "description": "Espera hasta que el usuario presione una tecla o combinación y la alamacena en una variable"
       },
       "form": {
         "css": "modal-lg",
