@@ -2,6 +2,12 @@
 Send predefined key combinations
 
 ![alt text](https://raw.githubusercontent.com/rocketbot-cl/Keyboard_/master/example/keyboard.png)
+<h2></h2>
+
+![alt text](https://raw.githubusercontent.com/rocketbot-cl/Keyboard_/master/example/keyboard2.png)
+<h2></h2>
+
+![alt text](https://raw.githubusercontent.com/rocketbot-cl/Keyboard_/master/example/keyboard3.png)
 
 <h2>Dependencies</h2>
 
