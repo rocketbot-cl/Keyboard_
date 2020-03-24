@@ -438,7 +438,7 @@
         "description": "Comando para enviar tecla cuando falle el comando nativo de 'Envia tecla'"
       },
       "form": {
-        "css": "modal-md",
+        "css": "modal-lg",
         "inputs": [
           {
             "type": "input",
@@ -451,7 +451,24 @@
               "en": "Text"
             },
             "id": "text",
-            "css": "col-md-12"
+            "css": "col-md-8"
+          },
+          {
+            "type": "checkbox",
+            "placeholder": {
+              "es": "enter",
+              "en": "enter"
+            },
+            "title": {
+              "es": "Tecla especial",
+              "en": "Tecla especial"
+            },
+            "help":{
+              "es": "Activar cuando se quiera enviar una tecla especial. ej: Enter",
+              "en": "Activate when you want to send a special key. eg: Enter"
+            },
+            "id": "notText",
+            "css": "col-md-4"
           }
         ]
       },

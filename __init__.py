@@ -420,9 +420,13 @@ if module == "get":
 
 if module == "send":
     text = GetParams("text")
+    special = GetParams("notText")
 
     try:
-        keyboard.press_and_release([i for i in text])
+        if special:
+            keyboard.press_and_release(text)
+        else:
+            keyboard.press_and_release([i for i in text])
     except Exception as e:
         PrintException()
         raise e
