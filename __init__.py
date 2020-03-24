@@ -426,7 +426,10 @@ if module == "send":
         if special:
             keyboard.press_and_release(text)
         else:
-            keyboard.press_and_release([i for i in text])
+            from time import sleep
+            for i in text:
+                keyboard.press_and_release(i)
+                sleep(1)
     except Exception as e:
         PrintException()
         raise e
