@@ -416,7 +416,7 @@ if module == "get":
             SetVar(result, hot_key)
     except Exception as e:
         PrintException()
-        raise egit
+        raise e
 
 if module == "send":
     text = GetParams("text")
