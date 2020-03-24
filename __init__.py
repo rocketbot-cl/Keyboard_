@@ -97,10 +97,16 @@ if module == "get":
             SetVar(result, hot_key)
     except Exception as e:
         PrintException()
+        raise egit
+
+if module == "send":
+    text = GetParams("text")
+
+    try:
+        keyboard.press_and_release([i for i in text])
+    except Exception as e:
+        PrintException()
         raise e
-
-
-
 
 
 
