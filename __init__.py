@@ -422,13 +422,15 @@ if module == "send":
     text = GetParams("text")
     key_ = GetParams("key_")
     wait = GetParams("sleep")
+    from time import sleep
     try:
         if not wait:
             wait = 1
         if not text:
+            sleep(wait)
             keyboard.press_and_release(key_)
         else:
-            from time import sleep
+
             for i in text:
                 keyboard.press_and_release(i)
                 sleep(wait)
