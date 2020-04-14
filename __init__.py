@@ -46,6 +46,9 @@ if module == "sendKey":
 
     if key_:
 
+        if key_ == "alt_tab":
+            send_keys('%{TAB}')
+
         if key_ == "win":
             send_keys('{VK_LWIN down}{VK_LWIN up}')
 
@@ -98,7 +101,7 @@ if module == "repeat_key":
 
     if repeat is not None:
         repeat = str(repeat)
-    print(repeat)
+    #print(repeat)
 
     if key_ == "add":
         if repeat is not None:
@@ -111,6 +114,13 @@ if module == "repeat_key":
             send_keys('{VK_MENU ' + repeat + '}')
         else:
             send_keys('{VK_MENU}')
+
+    if key_ == "alt_tab":
+        if repeat is not None:
+            send_keys('{VK_MENU down}{TAB ' + repeat + '} {VK_MENU up}')
+        else:
+            send_keys('{VK_MENU down}{TAB}{VK_MENU up}')
+
 
     if key_ == "backspace":
         if repeat is not None:
