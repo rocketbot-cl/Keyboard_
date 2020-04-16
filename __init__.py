@@ -427,13 +427,13 @@ if module == "send":
         if not wait:
             wait = 1
         if not text:
-            sleep(wait)
+            sleep(int(wait))
             keyboard.press_and_release(key_)
         else:
 
             for i in text:
                 keyboard.press_and_release(i)
-                sleep(wait)
+                sleep(int(wait))
     except Exception as e:
         PrintException()
         raise e
