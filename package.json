@@ -107,6 +107,10 @@
               {
                 "title": "Menu Key (Contextual Key)",
                 "value": "contextual"
+              },
+              {
+                "title": "Ctrl + G",
+                "value": "ctrlg"
               }
             ],
             "id": "key_",
@@ -374,6 +378,10 @@
               "es": "Vacío para repetir sólo una vez",
               "en": "Empty to repeat only once"
             },
+            "description": {
+                "es": "Número de veces a repetir la acción",
+                "en": "How many times repeat the action"
+              },
             "id": "repeat",
             "css": "col-md-6"
           }
@@ -417,6 +425,10 @@
             "help": {
               "en": "Variable where the result is stored without {}",
               "es": "Variable donde se almacena el resultado sin {}"
+            },
+            "description":{
+                "es": "Asigna el resultado de la ejecución de la tarea a una variable",
+                "en": "Assign the result of the task execution to a variable"
             },
             "id": "result",
             "css": "col-md-6"
@@ -683,6 +695,10 @@
             "title": {
               "es": "Tiempo de espera entre caracteres",
               "en": "Time waits between characters"
+            },
+            "description":{
+                "es": "Cuanto tiempo se debe esperar para escribir cada caracter",
+                "en": "How much time wait between writing characters"
             },
             "id": "sleep",
             "css": "col-md-6"

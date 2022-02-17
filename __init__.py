@@ -90,6 +90,9 @@ if module == "sendKey":
 
         if key_ == "contextual":
             send_keys('{VK_APPS}')
+        
+        if key_ == "ctrlg":
+            send_keys('^G')
 
     else:
         raise Exception('Debe seleccionar una opcion')
