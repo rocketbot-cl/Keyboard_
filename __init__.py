@@ -62,10 +62,10 @@ if module == "sendKey":
             send_keys('{VK_LWIN down}E{VK_LWIN up}')
 
         if key_ == "ctrlc":
-            send_keys('^C')
+            send_keys('{VK_CONTROL down}C{VK_CONTROL up}')
 
         if key_ == "ctrlv":
-            send_keys('^V')
+            send_keys('{VK_CONTROL down}V{VK_CONTROL up}')
 
         if key_ == "ctrl_press":
             send_keys('{VK_CONTROL down}')
@@ -80,19 +80,19 @@ if module == "sendKey":
             send_keys('{VK_SHIFT up}')
 
         if key_ == "ctrla":
-            send_keys('^A')
+            send_keys('{VK_CONTROL down}A{VK_CONTROL up}')
 
         if key_ == "ctrle":
-            send_keys('^E')
+            send_keys('{VK_CONTROL down}E{VK_CONTROL up}')
 
         if key_ == "ctrlb":
-            send_keys('^B')
+            send_keys('{VK_CONTROL down}B{VK_CONTROL up}')
 
         if key_ == "contextual":
             send_keys('{VK_APPS}')
         
         if key_ == "ctrlg":
-            send_keys('^G')
+            send_keys('{VK_CONTROL down}G{VK_CONTROL up}')
 
     else:
         raise Exception('Debe seleccionar una opcion')
