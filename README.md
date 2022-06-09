@@ -25,17 +25,6 @@ Wait until the user presses a key or combination and store it in a variable
 4. Send key  
 Command to send key, when It failed to send native 'Send key'
 
-5. Send text  
-Send text to an input text
-
-6. Get text  
-Get text from an item from a input field
-
-7. Select combobox  
-Select an option from a combobox  
-
-
-
 
 ----
 ### OS
