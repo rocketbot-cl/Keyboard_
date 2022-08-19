@@ -451,11 +451,11 @@
     {
       "en": {
         "title": "Send key",
-        "description": "Command to send key, when It failed to send native 'Send key'"
+        "description": "Command to send key, when It failed to send native 'Send key'.If you want to write in uppercase, the caps lock key must be disabled"
       },
       "es": {
         "title": "Enviar tecla",
-        "description": "Comando para enviar tecla cuando falle el comando nativo de 'Envia tecla'"
+        "description": "Comando para enviar tecla cuando falle el comando nativo de 'Envia tecla'. Si se desea escribir en mayúscula, la tecla bloq mayús debe estar desactivada"
       },
       "form": {
         "css": "modal-lg",
