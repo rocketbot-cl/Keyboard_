@@ -1,6 +1,6 @@
 # coding: utf-8
-"""
-Base para desarrollo de modulos externos.
+"""Base para desarrollo de modulos externos.
+
 Para obtener el modulo/Funcion que se esta llamando:
      GetParams("module")
 
@@ -24,25 +24,32 @@ Para instalar librerias se debe ingresar por terminal a la carpeta "libs"
 
 """
 
+__author__ = "Marcela Vergara"
+__updated_by__ = "Caleb Cipra"
+__version__ = "2.0.1"
+
+tmp_global_obj = tmp_global_obj #type: ignore
+GetParams = GetParams #type: ignore
+PrintException = PrintException #type: ignore
+SetVar = SetVar #type: ignore
+
 import os
 import sys
 
 base_path = tmp_global_obj["basepath"]
-cur_path = base_path + 'modules' + os.sep + 'Keyboard_' + os.sep + 'libs' + os.sep
-sys.path.append(cur_path)
-import keyboard
-import time
+cur_path = os.path.join(base_path, "modules", "Keyboard_", "libs")
+if cur_path not in sys.path:
+    sys.path.append(cur_path)
 
+import keyboard
 from pywinauto.keyboard import send_keys
 
-"""
-    Obtengo el modulo que fue invocado
-"""
-module = GetParams("module")
+
+
+module = GetParams("module") #Obtengo el modulo que fue invocado
 
 if module == "sendKey":
     key_ = GetParams('key_')
-
 
     if key_:
 
@@ -443,9 +450,12 @@ if module == "send":
             sleep(int(wait))
             keyboard.press_and_release(key_)
         else:
-
             for i in text:
-                keyboard.press_and_release(i)
+                if i.isupper():
+                    i = i.lower()
+                    keyboard.press_and_release(f"shift+{i}")
+                else:
+                    keyboard.press_and_release(i)
                 sleep(int(wait))
     except Exception as e:
         PrintException()
