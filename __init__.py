@@ -25,8 +25,8 @@ Para instalar librerias se debe ingresar por terminal a la carpeta "libs"
 """
 
 __author__ = "Marcela Vergara"
-__updated_by__ = "Caleb Cipra"
-__version__ = "2.0.1"
+__updated_by__ = "Caleb Cipra, Nicolas Garcia"
+__version__ = "2.0.2"
 
 tmp_global_obj = tmp_global_obj #type: ignore
 GetParams = GetParams #type: ignore

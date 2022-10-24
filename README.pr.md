@@ -1,33 +1,33 @@
-# Keyboard
+# Teclado
   
-Module to perform different actions related to the keyboard  
+Módulo para realizar diferentes ações relacionadas com o teclado  
 
 *Read this in other languages: [English](README.md), [Portugues](README.pr.md), [Español](README.es.md).*
 
-## How to install this module
+## Como instalar este módulo
   
-__Download__ and __install__ the content in 'modules' folder in Rocketbot path  
+__Baixe__ e __instale__ o conteúdo na pasta 'modules' no caminho do Rocketbot  
 
 
-## How to use this module
+## Como usar este módulo
 
-Select the characters or combination of keys to send.
+Selecione os caracteres ou a combinação de teclas a serem enviados.
 
 
 ## Overview
 
 
-1. Send Combinations  
-Send predefined keys
+1. Enviar Combinacoes  
+Envia teclas predefinidas
 
-2. Repeat Key  
-Send key and repetitions
+2. Repetir a chave  
+Enviar uma chave e o número de repetições
 
-3. Get keys  
-Wait until the user presses a key or combination and store it in a variable
+3. Obter combinação de teclas  
+Aguarda até que o usuário pressione uma tecla ou combinação e a armazena em uma variável
 
-4. Send key  
-Command to send key, when It failed to send native 'Send key'.If you want to write in uppercase, the caps lock key must be disabled  
+4. Enviar tecla  
+Comando para enviar tecla quando falhar o comando nativo de 'Enviar tecla'. Se deseja escrever em maiúsculo, a tecla de bloqueio de maiúsculas deve estar desativada  
 
 
 

@@ -1,53 +1,50 @@
-
-
-
-
-# Teclado
+# Keyboard
   
-Módulo para realizar diferentes acciones relacionadas al teclado  
+Module to perform different actions related to the keyboard  
+
+*Read this in other languages: [English](Manual_keyboard_.md), [Portugues](Manual_keyboard_.pr.md), [Español](Manual_keyboard_.es.md).*
   
 ![banner](imgs/Banner_Keyboard_.png)
-## Como instalar este módulo
+## How to install this module
   
-__Descarga__ e __instala__ el contenido en la carpeta 'modules' en la ruta de rocketbot.  
+__Download__ and __install__ the content in 'modules' folder in Rocketbot path  
+
+
+## How to use this module
+
+Select the characters or combination of keys to send.
 
 
 
+## Description of the commands
 
-## Como usar este modulo
-
-Selecciona los caracteres o combinaciones de teclas a enviar.
-
-
-## Descripción de los comandos
-
-### Enviar Combinaciones
+### Send Combinations
   
-Envía teclas predefinidas
-|Parámetros|Descripción|ejemplo|
+Send predefined keys
+|Parameters|Description|example|
 | --- | --- | --- |
-|Seleccione la acción||Prompt|
+|Select the action|Select a predefined key combination|Alt + Tab|
 
-### Repetir Tecla
+### Repeat Key
   
-Envía una tecla y la cantidad de repeticiones
-|Parámetros|Descripción|ejemplo|
+Send key and repetitions
+|Parameters|Description|example|
 | --- | --- | --- |
-|Seleccione la tecla||Prompt|
-|Repetir|Número de veces a repetir la acción|5|
+|Select the key|Select the key you want to send|BACKSPACE|
+|Repeat|How many times repeat the action|5|
 
-### Obtener combinación de teclas
+### Get keys
   
-Espera hasta que el usuario presione una tecla o combinación y la alamacena en una variable
-|Parámetros|Descripción|ejemplo|
+Wait until the user presses a key or combination and store it in a variable
+|Parameters|Description|example|
 | --- | --- | --- |
-|Resultado|Asigna el resultado de la ejecución de la tarea a una variable|resultado|
+|Result|Assign the result of the task execution to a variable|result|
 
-### Enviar tecla
+### Send key
   
-Comando para enviar tecla cuando falle el comando nativo de 'Envia tecla'
-|Parámetros|Descripción|ejemplo|
+Command to send key, when It failed to send native 'Send key'.If you want to write in uppercase, the caps lock key must be disabled
+|Parameters|Description|example|
 | --- | --- | --- |
-|Texto||Lorem ipsum|
-|Seleccione la tecla||Prompt|
-|Tiempo de espera entre caracteres|Cuanto tiempo se debe esperar para escribir cada caracter|1|
+|Text|Text to send|Lorem ipsum|
+|Select the key|Key to send|ENTER|
+|Time waits between characters|How much time wait between writing characters|1|
