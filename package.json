@@ -1,8 +1,13 @@
 {
   "author": "Marcela Vergara",
-  "description": "Módulo para realizar diferentes acciones relacionadas al teclado",
+  "description": "Module to do different actions related to the keyboard",
+  "description_lang":{
+    "en": "Module to do different actions related to the keyboard",
+    "es": "Módulo para realizar diferentes acciones relacionadas con el teclado",
+    "pr": "Módulo para realizar diferentes ações relacionadas com o teclado"
+  },
   "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "license": "MIT",
   "homepage": "http://rocketbot.co/",
   "linux": false,
@@ -102,12 +107,92 @@
                 "value": "ctrl_release"
               },
               {
+                "title": "Alt Press",
+                "value": "alt_press"
+              },
+              {
+                "title": "Alt Release",
+                "value": "alt_release"
+              },
+              {
                 "title": "Shift Press",
                 "value": "shift_press"
               },
                {
                 "title": "Shift Release",
                 "value": "shift_release"
+              },
+              {
+                "title": "Windows Press",
+                "value": "win_press"
+              },
+              {
+                "title": "Windows Release",
+                "value": "win_release"
+              },
+              {
+                "title": "Left Ctrl Press",
+                "value": "left_control_press"
+              },
+              {
+                "title": "Left Ctrl Release",
+                "value": "left_control_release"
+              },
+              {
+                "title": "Right Ctrl Press",
+                "value": "right_control_press"
+              },
+              {
+                "title": "Right Ctrl Release",
+                "value": "right_control_release"
+              },
+              {
+                "title": "Left Shift Press",
+                "value": "left_shift_press"
+              },
+              {
+                "title": "Left Shift Release",
+                "value": "left_shift_release"
+              },
+              {
+                "title": "Right Shift Press",
+                "value": "right_shift_press"
+              },
+              {
+                "title": "Right Shift Release",
+                "value": "right_shift_release"
+              },
+              {
+                "title": "Left Alt Press",
+                "value": "left_alt_press"
+              },
+              {
+                "title": "Left Alt Release",
+                "value": "left_alt_release"
+              },
+              {
+                "title": "Right Alt Press",
+                "value": "right_alt_press"
+              },
+              {
+                "title": "Right Alt Release",
+                "value": "right_alt_release"
+              },
+              {
+                "title": "Left Win Press",
+                "value": "left_win_press"
+              },
+              {
+                "title": "Left Win Release",
+                "value": "left_win_release"
+              },
+              {
+                "title": "Right Win Press",
+                "value": "right_win_press"
+              },
+              {
+                "title": "Right Win Release",
+                "value": "right_win_release"
               },
               {
                 "title": "Select All (Ctrl +A)",
@@ -285,12 +370,32 @@
                 "value": "f9"
               },
               {
+                "title": "F10",
+                "value": "f10"
+              },
+              {
+                "title": "F11",
+                "value": "f11"
+              },
+              {
+                "title": "F12",
+                "value": "f12"
+              },
+              {
                 "title": "HELP",
                 "value": "help"
               },
               {
                 "title": "HOME",
                 "value": "home"
+              },
+              {
+                "title": "PAGE_UP",
+                "value": "page_up"
+              },
+              {
+                "title": "PAGE_DOWN",
+                "value": "page_down"
               },
               {
                 "title": "INSERT",
@@ -351,6 +456,22 @@
               {
                 "title": "PAUSE",
                 "value": "pause"
+              },
+              {
+                "title": "CAPS_LOCK",
+                "value": "caps_lock"
+              },
+              {
+                "title": "NUM_LOCK",
+                "value": "num_lock"
+              },
+              {
+                "title": "SCROLL_LOCK",
+                "value": "scroll_lock"
+              },
+              {
+                "title": "PRINT_SCREEN",
+                "value": "print_screen"
               },
               {
                 "title": "RETURN",
@@ -496,7 +617,7 @@
     {
       "en": {
         "title": "Send key",
-        "description": "Command to send key, when It failed to send native 'Send key'.If you want to write in uppercase, the caps lock key must be disabled"
+        "description": "Command to send key, when It failed to send native 'Send key'.If you want to write in uppercase, the caps lock key must be disabled."
       },
       "es": {
         "title": "Enviar tecla",
@@ -640,12 +761,32 @@
                 "value": "f9"
               },
               {
+                "title": "F10",
+                "value": "f10"
+              },
+              {
+                "title": "F11",
+                "value": "f11"
+              },
+              {
+                "title": "F12",
+                "value": "f12"
+              },
+              {
                 "title": "HELP",
                 "value": "help"
               },
               {
                 "title": "HOME",
                 "value": "home"
+              },
+              {
+                "title": "PAGE_UP",
+                "value": "page_up"
+              },
+              {
+                "title": "PAGE_DOWN",
+                "value": "page_down"
               },
               {
                 "title": "INSERT",
@@ -706,6 +847,22 @@
               {
                 "title": "PAUSE",
                 "value": "pause"
+              },
+              {
+                "title": "CAPS_LOCK",
+                "value": "caps_lock"
+              },
+              {
+                "title": "NUM_LOCK",
+                "value": "num_lock"
+              },
+              {
+                "title": "SCROLL_LOCK",
+                "value": "scroll_lock"
+              },
+              {
+                "title": "PRINT_SCREEN",
+                "value": "print_screen"
               },
               {
                 "title": "RETURN",
