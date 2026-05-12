@@ -85,6 +85,65 @@ if module == "sendKey":
 
         if key_ == "shift_release":
             send_keys('{VK_SHIFT up}')
+        if key_ == "alt_press":
+            send_keys('{VK_MENU down}')
+
+        if key_ == "alt_release":
+            send_keys('{VK_MENU up}')
+
+        if key_ == "win_press":
+            send_keys('{VK_LWIN down}')
+
+        if key_ == "win_release":
+            send_keys('{VK_LWIN up}')
+
+        if key_ == "left_control_press":
+            send_keys('{VK_LCONTROL down}')
+
+        if key_ == "left_control_release":
+            send_keys('{VK_LCONTROL up}')
+
+        if key_ == "right_control_press":
+            send_keys('{VK_RCONTROL down}')
+
+        if key_ == "right_control_release":
+            send_keys('{VK_RCONTROL up}')
+
+        if key_ == "left_shift_press":
+            send_keys('{VK_LSHIFT down}')
+
+        if key_ == "left_shift_release":
+            send_keys('{VK_LSHIFT up}')
+
+        if key_ == "right_shift_press":
+            send_keys('{VK_RSHIFT down}')
+
+        if key_ == "right_shift_release":
+            send_keys('{VK_RSHIFT up}')
+
+        if key_ == "left_alt_press":
+            send_keys('{VK_LMENU down}')
+
+        if key_ == "left_alt_release":
+            send_keys('{VK_LMENU up}')
+
+        if key_ == "right_alt_press":
+            send_keys('{VK_RMENU down}')
+
+        if key_ == "right_alt_release":
+            send_keys('{VK_RMENU up}')
+
+        if key_ == "left_win_press":
+            send_keys('{VK_LWIN down}')
+
+        if key_ == "left_win_release":
+            send_keys('{VK_LWIN up}')
+
+        if key_ == "right_win_press":
+            send_keys('{VK_RWIN down}')
+
+        if key_ == "right_win_release":
+            send_keys('{VK_RWIN up}')
 
         if key_ == "ctrla":
             send_keys('{VK_CONTROL down}A{VK_CONTROL up}')
@@ -252,6 +311,24 @@ if module == "repeat_key":
         else:
             send_keys('{VK_F9}')
 
+    if key_ == "f10":
+        if repeat is not None:
+            send_keys('{VK_F10 ' + repeat + '}')
+        else:
+            send_keys('{VK_F10}')
+
+    if key_ == "f11":
+        if repeat is not None:
+            send_keys('{VK_F11 ' + repeat + '}')
+        else:
+            send_keys('{VK_F11}')
+
+    if key_ == "f12":
+        if repeat is not None:
+            send_keys('{VK_F12 ' + repeat + '}')
+        else:
+            send_keys('{VK_F12}')
+
     if key_ == "help":
         if repeat is not None:
             send_keys('{VK_HELP ' + repeat + '}')
@@ -263,6 +340,18 @@ if module == "repeat_key":
             send_keys('{VK_HOME ' + repeat + '}')
         else:
             send_keys('{VK_HOME}')
+
+    if key_ == "page_up":
+        if repeat is not None:
+            send_keys('{VK_PRIOR ' + repeat + '}')
+        else:
+            send_keys('{VK_PRIOR}')
+
+    if key_ == "page_down":
+        if repeat is not None:
+            send_keys('{VK_NEXT ' + repeat + '}')
+        else:
+            send_keys('{VK_NEXT}')
 
     if key_ == "insert":
         if repeat is not None:
@@ -354,6 +443,30 @@ if module == "repeat_key":
         else:
             send_keys('{VK_PAUSE}')
 
+    if key_ == "caps_lock":
+        if repeat is not None:
+            send_keys('{VK_CAPITAL ' + repeat + '}')
+        else:
+            send_keys('{VK_CAPITAL}')
+
+    if key_ == "num_lock":
+        if repeat is not None:
+            send_keys('{VK_NUMLOCK ' + repeat + '}')
+        else:
+            send_keys('{VK_NUMLOCK}')
+
+    if key_ == "scroll_lock":
+        if repeat is not None:
+            send_keys('{VK_SCROLL ' + repeat + '}')
+        else:
+            send_keys('{VK_SCROLL}')
+
+    if key_ == "print_screen":
+        if repeat is not None:
+            send_keys('{VK_SNAPSHOT ' + repeat + '}')
+        else:
+            send_keys('{VK_SNAPSHOT}')
+
     if key_ == "return":
         if repeat is not None:
             send_keys('{VK_RETURN ' + repeat + '}')
@@ -442,13 +555,17 @@ if module == "send":
     text = GetParams("text")
     key_ = GetParams("key_")
     wait = GetParams("sleep")
+
     from time import sleep
+
     try:
         if not wait:
             wait = 1
+
         if not text:
             sleep(float(wait))
             keyboard.press_and_release(key_)
+
         else:
             for i in text:
                 if i.isupper():
@@ -457,6 +574,7 @@ if module == "send":
                 else:
                     keyboard.press_and_release(i)
                 sleep(float(wait))
+
     except Exception as e:
         PrintException()
         raise e
